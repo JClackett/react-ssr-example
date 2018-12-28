@@ -1,0 +1,28 @@
+{
+	"name": "react-ssr",
+	"version": "1.0.0",
+	"main": "server",
+	"license": "MIT",
+	"scripts": {
+		"start": "babel-node server",
+		"dev": "rm -rf dist && parcel web/templates/index.html",
+		"build:web": "rm -rf dist && parcel build web/index.js --out-file dist/app.bundle.js --no-source-maps"
+	},
+	"dependencies": {
+		"@reach/router": "^1.2.1",
+		"app.css": "^0.1.2",
+		"express": "^4.16.4",
+		"morgan": "^1.9.1",
+		"react": "^16.7.0",
+		"react-dom": "^16.7.0",
+		"styled-components": "^4.1.3"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.2.3",
+		"@babel/core": "^7.2.2",
+		"@babel/node": "^7.2.2",
+		"@babel/preset-env": "^7.2.3",
+		"@babel/preset-react": "^7.0.0",
+		"parcel-bundler": "^1.11.0"
+	}
+}
